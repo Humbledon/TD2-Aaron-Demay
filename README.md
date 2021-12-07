@@ -51,8 +51,8 @@ C(mere) surcharge la méthode  c () dans la classe mere
 D(mere) surcharge la méthode d() dans la classe fille
 
 4)Explication des affichages 
-Mere mere=new Mere();
-Mere mereFille=new Fille();
+Mere mere=new Mere(); <br/>
+Mere mereFille=new Fille(); <br/>
 Fille fille=new Fille();
 mere.miage();	=> miage n’esr pas définie dans la classe Mere
 fille.miage(); => Appel de la méthode miage dans la classe fille
