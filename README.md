@@ -49,7 +49,8 @@ Les surcharges sont :
 D(mere) surcharge la méthode d() dans la classe fille
 C(mere) surcharge la méthode  c () dans la classe mere
 D(mere) surcharge la méthode d() dans la classe fille
-Explication des affichages 
+
+4)Explication des affichages 
 Mere mere=new Mere();
 Mere mereFille=new Fille();
 Fille fille=new Fille();
