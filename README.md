@@ -25,6 +25,7 @@ On remarque également que merefille.meth() renvoie 24 car la variable est de ty
 42 <br/>
 42 <br/>
 42 <br/>
+
 Exercice 2 <br/>
 
 1)	On remarque que la méthode i() de fille retourne un int alors que la méthode i de Mère ne retourne rien <br/>
