@@ -36,7 +36,42 @@ Les redéfinitions sont :
 a() de la classe fille redéfinit le a() de la classe mere
 b() de la classe fille redéfinit le b() de la classe mere
 c(Mere) 
-f() de la classe fille redéfinit le f() de la classe mere
+g() de la classe fille redéfinit le g() de la classe mere
+j() de la classe fille redéfinit le j() de la classe mere
+l() de la classe fille redéfinit le l() de la classe mere
+m() de la classe fille redéfinit le m() de la classe mere
+
+Les surcharges sont :
+D(mere) surcharge la méthode d() dans la classe fille
+C(mere) surcharge la méthode  c () dans la classe mere
+D(mere) surcharge la méthode d() dans la classe fille
+Explication des affichages 
+Mere mere=new Mere();
+Mere mereFille=new Fille();
+Fille fille=new Fille();
+mere.miage();	=> miage n’esr pas définie dans la classe Mere
+fille.miage(); => Appel de la méthode miage dans la classe fille
+mereFille.miage(); =>comme variable est de type Mere elle n’a pas accès à la méthode miage()
+((Fille)mereFille).miage(); => Merefille devient de la classe Fille grace au cast
+mere.a(); => Appel de la méthode a() dans la classe Mere
+mereFille.a();	=> Appel de la méthode a() de la classe fille car il s’agit de son type 
+fille.a(); => Appel de la méthode a() de la classe fille car il s’agit de son type 
+((Mere)mereFille).a();	Appel de la méthode a() de la classe fille car il s’agit de son type. Meme avec le cast
+mereFille.b(null);  mereFille est de type Fille => Appel de la méthode b() dans Fille
+mereFille.c(); => On ne trouve pas de c() dans la classe fille. On va donc chercher cette méthode dans la classe Mere	
+mereFille.c(mere);=> Comme de type fille, on réutilise la méthode c() de la classe Fille
+mereFille.c(mereFille); 
+mereFille.c(fille); 
+mere.d();	 
+mereFille.d(); => appel sur le type de la variable de stockage
+mere.printF();	
+mereFille.printF();=> Appel de la méthode printF qui se situe dans la classe Mere
+mereFille.j();	=> appel de la méthode j() de la classe fille car merefille est de type fille
+mereFille.k(); 	
+mereFille.l();	appel de la méthode l() de la classe fille car merefille est de type fille
+mereFille.m();appel de la méthode m() de la classe fille car merefille est de type fille
+
+
 
 
 
